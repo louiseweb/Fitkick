@@ -1,0 +1,60 @@
+// Bootstrap
+
+// Typography
+
+// - Body
+$font-family-base: 'helvetica', sans-serif;
+
+// - Display
+$display-font-family: 'Kanit', sans-serif;
+$display-font-weight: 700; 
+$display-line-height: .85;
+$display-font-sizes: (
+  1: rem(90),
+  2: rem(60),
+  3: rem(50),
+  4: rem(36),
+  5: rem(32),
+  6: rem(20),
+);
+
+// Colors
+$primary: #D6FB00;
+$secondary: #191919;
+$white: #ffffff;
+$light-grey: #5E5E5E;
+$pale-grey: #EDEDED;
+
+// Buttons
+$btn-focus-width: none;
+
+// Navbar
+$navbar-padding-y: rem(18.5);
+$navbar-light-toggler-icon-bg: url('../../dist/img/icon-open.png');
+$navbar-light-toggler-border-color: unset;
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
+
+// Accordion
+$accordion-padding-y: rem(40) rem(10);
+$accordion-padding-x: 0;
+$accordion-bg: $secondary;
+$accordion-border-color: $secondary;  
+$accordion-color: $light-grey;
+$accordion-icon-color: $light-grey;
+$accordion-icon-active-color: $light-grey;
+$accordion-button-focus-border-color: $secondary;
+$accordion-button-focus-box-shadow: $secondary;  
+$accordion-button-active-color: $white;   
+$accordion-button-active-bg: $secondary; 
+
+// Custom
+
+// Transitions
+$transition-1: all 0.3s ease-in-out;
+
+// Section padding
+$section-py-mobile: rem(100) 0;
+$section-py-tablet: rem(125) 0;
+$section-py-desktop: rem(150) 0;
+
