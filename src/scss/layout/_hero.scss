@@ -19,7 +19,7 @@
     }
     
     @include breakpoint(desktop) {
-	    height: rem(1025);
+	    height: rem(1050);
 
         &::after {
             transform: skew(0deg, -4deg);

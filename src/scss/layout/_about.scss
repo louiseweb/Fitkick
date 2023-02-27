@@ -1,7 +1,12 @@
 .about {
 
     @include breakpoint(tablet) {
+        padding-bottom: rem(150);
+    }
+
+    @include breakpoint(desktop) {
         padding-top: rem(110);
+        padding-bottom: rem(0);
     }
 
     padding-top: rem(0);
@@ -31,5 +36,7 @@
         z-index: 3;
         object-fit: cover;
     }
+
+    
 
 }

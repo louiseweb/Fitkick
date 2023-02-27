@@ -10,6 +10,7 @@
 <body>
 <!-- Header -->
 <header>
+
     <!-- Navbar -->
     <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
@@ -194,17 +195,70 @@
               </div>
 
             </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- BMI Calculator -->
+      <section class="bmi">
+        <div class="container-xl">
+          <div class="bmi-container p-5 bg-light">
+            <h2 class="bmi-header display-3 text-white mb-4">Check <br>your BMI</h2>
 
-                   
+            <div class="bmi-info bg-white p-3 mb-4">
+              <p class="fw-bold">How it works?</p>
+              <p>Use this calculator to check your body mass index (BMI) and find out if you’re a healthy weight. This is the World Health Organization’s (WHO) recommended body weight based on BMI values for adults. It is used for both men and women, age 20 or older.</p>
+            </div>
+
+            <!-- Form -->
+            <form class="bmi-form">
+              <div class="d-flex">
+                <div class="form-check me-3">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Male
+                  </label>
+                </div>
+  
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Female
+                  </label>
+                </div>
+              </div>
+
+              <div class="my-3 w-50">
+                <label for="InputAge" class="form-label">Age</label>
+                <input type="age" class="form-control" id="InputAge" aria-describedby="ageHelp">
+              </div>
+
+              <div class="my-3 w-50">
+                <label for="InputWeight" class="form-label">Weight</label>
+                <input type="weight" class="form-control" id="InputWeight" aria-describedby="weightHelp">
+              </div>
+
+              <div class="my-3 w-50">
+                <label for="InputHeight" class="form-label">Height</label>
+                <input type="height" class="form-control" id="InputHeight" aria-describedby="heightHelp">
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg mt-4">Calculate <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-right-fill ms-2" viewBox="0 0 16 16">
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+              </svg></button>
+              
+            </form>
+
+        
             
-
-            
-
           </div>
 
         </div>
+
+
       </section>
+
+
 
     </main>
       

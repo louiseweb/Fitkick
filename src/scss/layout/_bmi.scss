@@ -1,0 +1,33 @@
+.bmi {
+    background: url(../../dist/img/image-BG-BMI.jpg);
+    background-position: top center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+
+    padding-top: rem(225);
+    padding-bottom: rem(110);
+
+    &-container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &-container::after {
+        content: '';
+        position: absolute;
+        top: rem(-75);
+        left: 0;
+        width: 100%;
+        height: rem(275);
+        background-color: $primary;
+        z-index: 1;
+        transform: skew(0deg, -10deg);
+
+    }
+
+    &-header, &-form, &-info {
+        position: relative;
+        z-index: 2;
+    }
+    
+}
