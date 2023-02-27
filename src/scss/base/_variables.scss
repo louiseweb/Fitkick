@@ -3,11 +3,12 @@
 // Typography
 
 // - Body
-$font-family-base: 'helvetica', sans-serif;
+$font-family-base: 'Open Sans', sans-serif;
+$line-height-base: 1.6; 
 
 // - Display
-$display-font-family: 'Kanit', sans-serif;
-$display-font-weight: 700; 
+$display-font-family: 'ExcludedItalic', sans-serif;
+// $display-font-weight: 700; 
 $display-line-height: .85;
 $display-font-sizes: (
   1: rem(90),
@@ -19,30 +20,47 @@ $display-font-sizes: (
 );
 
 // Colors
-$primary: #D6FB00;
-$secondary: #191919;
+$primary: #3B1FD3;
+$secondary: #0F005D;
+$success: #E9F464;
 $white: #ffffff;
-$light-grey: #5E5E5E;
-$pale-grey: #EDEDED;
+$pale-grey: #F2F2F2;
 
 // Buttons
-$btn-focus-width: none;
+// $btn-focus-width: none;
+$btn-font-family: 'ExcludedItalic', sans-serif;
+$btn-border-radius-lg: 0;
+$btn-hover-bg-tint-amount: 50%;
+$btn-hover-bg-shade-amount: 25%;
+$btn-padding-y-lg: rem(18);
+$btn-padding-x-lg: rem(25);
+
+// Links
+$link-color: $primary;
+$link-hover-color: $success;
+
+// Close Btn
+$btn-close-bg: url(../../dist/img/icon-cross.svg);
+$btn-close-height: rem(20);
+$btn-close-width: rem(20);
 
 // Navbar
-$navbar-padding-y: rem(18.5);
-$navbar-light-toggler-icon-bg: url('../../dist/img/icon-open.png');
+$navbar-padding-y: rem(10);
+$navbar-light-toggler-icon-bg: url('../../dist/img/icon-menu.svg');
 $navbar-light-toggler-border-color: unset;
-$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-y: rem(10);
 $navbar-toggler-padding-x: 0;
+$navbar-brand-margin-end: 0;
+$navbar-toggler-font-size: rem(28);
 
 // Accordion
 $accordion-padding-y: rem(40) rem(10);
 $accordion-padding-x: 0;
 $accordion-bg: $secondary;
 $accordion-border-color: $secondary;  
-$accordion-color: $light-grey;
-$accordion-icon-color: $light-grey;
-$accordion-icon-active-color: $light-grey;
+// $accordion-color: $light-grey;
+// $accordion-icon-color: $light-grey;
+// $accordion-icon-active-color: $light-grey;
 $accordion-button-focus-border-color: $secondary;
 $accordion-button-focus-box-shadow: $secondary;  
 $accordion-button-active-color: $white;   

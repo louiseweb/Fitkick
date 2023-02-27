@@ -1,0 +1,31 @@
+.facilities {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: $primary;
+        height: rem(200);
+        width: 100%;
+        top: rem(-100);
+        left: 0;
+        transform: skew(0deg, -10deg);
+        z-index: -1;
+    }
+
+    @include breakpoint(desktop) {
+
+        &::after {
+            transform: skew(0deg, -4deg);
+        }
+    }
+
+    padding: rem(110) 0;
+    background-color: $primary;
+
+    &-header {
+        position: relative;
+        z-index: 4;
+    }
+
+}

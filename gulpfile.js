@@ -57,13 +57,15 @@ function watchTask() {
             [
             './src/scss/**/*.scss',
             './src/js/**/*.js',
-            './src/img/*'
+            // './src/img/*'
             ],
-            series(styles, scripts, images, browsersyncReload)
+            series(styles, scripts, browsersyncReload)
+            // add images
         );
 }
 
-exports.default = series(styles, scripts, images, browsersyncServe, watchTask);
+exports.default = series(styles, scripts, browsersyncServe, watchTask);
+// add images
 
 // Build
 exports.build = series(styles, scripts, images);

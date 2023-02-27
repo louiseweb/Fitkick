@@ -1,0 +1,35 @@
+.about {
+
+    @include breakpoint(tablet) {
+        padding-top: rem(110);
+    }
+
+    padding-top: rem(0);
+    
+    position: relative;
+    z-index: 5;
+
+    &-img-box {
+        position: relative;
+    }
+
+
+    &-img-box::after {
+        content: '';
+        position: absolute;
+        width: calc(100% - 15px);
+        height: 100%;
+        background-color: $success;
+        bottom: rem(-15);
+        right: rem(0);
+        z-index: 2;
+    }
+
+    &-img {
+        position: relative;
+        width: calc(100% - 15px);
+        z-index: 3;
+        object-fit: cover;
+    }
+
+}

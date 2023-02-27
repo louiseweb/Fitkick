@@ -1,0 +1,32 @@
+.navbar {
+
+  .offcanvas-body {
+    
+  }
+
+  .offcanvas-header::after {
+    content: '';
+    position: absolute;
+    top: -200;
+    left: 0;
+    height: rem(110);
+    width: 100%;
+    background-color: $primary;
+    // transform-origin: right top;
+    transform: skewY(-7deg);
+
+  }
+
+  &-btn {
+    position: relative;
+    z-index: 10;
+  }
+
+  &-avatar {
+    height: rem(26);
+  }
+
+  &-nav {
+    margin-top: rem(80);
+  }
+}

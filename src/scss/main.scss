@@ -2,7 +2,7 @@
 @import "utilities/functions";
 @import "utilities/mixins";
 @import "base/variables";
-@import "node_modules/bootstrap-icons/font/bootstrap-icons";
+// @import "node_modules/bootstrap-icons/font/bootstrap-icons";
 @import "node_modules/bootstrap/scss/bootstrap";
 
 
@@ -10,6 +10,10 @@
 // Then add additional custom code here
 @import "base/container";
 @import "base/reset";
+@import "base/typography";
 
-@import "layout/header";
+@import "layout/nav";
+@import "layout/hero";
+@import "layout/about";
+@import "layout/facilities";
 @import "layout/footer";

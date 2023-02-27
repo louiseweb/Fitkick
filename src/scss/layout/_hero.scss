@@ -1,0 +1,62 @@
+.hero {
+    height: rem(750);
+    background: url(../../dist/img/image-BG-hero.jpg);
+    background-position: top center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: $white;
+        height: rem(200);
+        width: 100%;
+        bottom: rem(-100);
+        left: 0;
+        transform: skew(0deg, -10deg);
+        z-index: 1;
+    }
+    
+    @include breakpoint(desktop) {
+	    height: rem(1025);
+
+        &::after {
+            transform: skew(0deg, -4deg);
+        }
+    }
+    
+    &-header {
+        max-width: 12ch;
+        padding-top: rem(135);
+
+        @include breakpoint(desktop) {
+            padding-top: rem(250);
+        }
+    }
+
+    &-text {
+        max-width: 65ch;
+    }
+
+    &-btns {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: rem(150);
+        position: relative;
+        z-index: 2;
+    }
+
+    &-btn {
+        width: 100%;
+    }
+
+    &-btn button {
+        height: rem(140);
+        width: 100%;
+    }
+
+}
+
+

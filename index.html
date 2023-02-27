@@ -8,6 +8,211 @@
     <title>Fitkick</title>
 </head>
 <body>
+<!-- Header -->
+<header>
+    <!-- Navbar -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <button class="navbar-toggler d-none d-md-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <a class="navbar-brand" href="#"><img src="dist/img/logo-fitkick.svg" alt="#"></a>
+          <a class="d-md-none" href="#"><img class="navbar-avatar" src="dist/img/icon-avatar.svg" alt="#"></a>
+          <a class="navbar-login d-none d-md-block" href="#"><img class="navbar-avatar me-2" src="dist/img/icon-avatar.svg" alt="#"></a>
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header justify-content-end">
+              <button type="button" class="navbar-btn btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link fw-bold active mb-3" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold mb-3" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold mb-3" href="#">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold mb-3" href="#">Classes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold mb-3" href="#">Timetable</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold mb-3" href="#">Trainers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold mb-3" href="#">Membership</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container-xl"> 
+            <h1 class="hero-header display-1 text-white mb-3">Get fit and reach your <span class="text-success">goals</span></h1>
+            <p class="hero-text text-white lead mb-5">Whatever your fitness goals FitKick can help you reach your full potential. With the latest in gym technology, plus a state-of-the-art progress tracking systems, what are you waiting for? Join FitKick today.</p>
+            <button class="btn btn-success btn-lg text-primary">Join Today<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-right-fill ms-2" viewBox="0 0 16 16">
+              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg></button>  
+
+            <div class="hero-btns d-none d-lg-flex">
+
+              <div class="hero-btn me-3">
+                <button class="btn btn-primary btn-lg fs-3">Classes<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#E9F464" class="bi bi-caret-right-fill ms-3" viewBox="0 0 16 16">
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+              </svg></button>
+            </div>
+
+              <div class="hero-btn me-3">
+                <button class="btn btn-primary btn-lg fs-3">Timetable<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#E9F464" class="bi bi-caret-right-fill ms-3" viewBox="0 0 16 16">
+                  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                </svg></button>
+              </div>
+
+              <div class="hero-btn">
+                <button class="btn btn-primary btn-lg fs-3">Trainers<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#E9F464" class="bi bi-caret-right-fill ms-3" viewBox="0 0 16 16">
+                  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                </svg></button>
+              </div>              
+            </div>
+        </div>       
+      </section>
+
+
+      <!-- About -->
+      <section class="about">
+        <div class="container-xl">
+          <div class="row">
+            <div class="about-text col-12 col-md-6 g-5">
+              <h2 class="display-3 text-primary mb-2">Why join Fitkick</h2>
+              <p class="mb-5">We are reopening with a refurbished gym, brand new equipment and additional studios and facilities to make your gym experience even better. At FitKick you can enjoy flexible memberships, unlimited classes and 24/7 access. We have professional and friendly staff on hand as well as top class fitness and personal trainers for those looking for additional support and personalised training.</p>
+              <h4 class="fw-bold text-primary mb-2">Why join today?</h3>
+              <p class="mb-5">To celebrate the gyms recent reopening, we are offering discounted rates with no joining free and if you recommend a friend they get their first month free.</p>
+              <button class="btn btn-secondary btn-lg mb-4">Join Today<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-right-fill ms-2" viewBox="0 0 16 16">
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+              </svg></button>
+            </div>
+            <div class="col-12 col-md-6 g-5">
+              <div class="about-img-box">
+                <img class="about-img img-fluid" src="dist/img/image-about.jpg" alt="Women at gym">
+              </div> 
+            </div>
+          </div>
+        </div>   
+      </section>
+
+      <!-- Facilities -->
+      <section class="facilities">
+        <div class="container-xl">  
+          <h2 class="facilities-header display-3 text-white mb-5">Facilities</h2>
+          <div class="facilities-bullets border border-white pt-5 px-5">
+
+            <div class="row">
+
+              <!-- Column 1 -->
+              <div class="col-12 col-md-4">
+                <div class="facilities-bullets-item d-flex mb-5">
+                  <div class="facilities-checkmark me-3">
+                    <img src="dist/img/icon-checkmark.svg">
+                  </div>
+                  <div class="facilities-text">
+                    <h5 class="fw-bold text-white mb-1">24/7 Access</h5>
+                    <p class="text-white">The freedom to access the gym at a time that suits you. Simply swipe your card to gain entry.</p>
+                  </div>
+                </div>
+    
+                <div class="facilities-bullets-item d-flex mb-5">
+                  <div class="facilities-checkmark me-3">
+                    <img src="dist/img/icon-checkmark.svg">
+                  </div>
+                  <div class="facilities-text">
+                    <h5 class="fw-bold text-white mb-1">Bring a guest</h5>
+                    <p class="text-white">Invite a guest up to 4 times a month, with no limitations on their visit.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Column 2 -->
+              <div class="col-12 col-md-4">
+                <div class="facilities-bullets-item d-flex mb-5">
+                  <div class="facilities-checkmark me-3">
+                    <img src="dist/img/icon-checkmark.svg">
+                  </div>
+                  <div class="facilities-text">
+                    <h5 class="fw-bold text-white mb-1">Flexible membership</h5>
+                    <p class="text-white">We offer flexible pay as you go memberships that can be cancelled at any time.</p>
+                  </div>
+                </div>
+    
+                <div class="facilities-bullets-item d-flex mb-5">
+                  <div class="facilities-checkmark me-3">
+                    <img src="dist/img/icon-checkmark.svg">
+                  </div>
+                  <div class="facilities-text">
+                    <h5 class="fw-bold text-white mb-1">State of the art equipment</h5>
+                    <p class="text-white">We provide Technogym equipment. Each piece comes with entertainment and progress monitoring.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Column 3 -->
+              <div class="col-12 col-md-4">
+                <div class="facilities-bullets-item d-flex mb-5">
+                  <div class="facilities-checkmark me-3">
+                    <img src="dist/img/icon-checkmark.svg">
+                  </div>
+                  <div class="facilities-text">
+                    <h5 class="fw-bold text-white mb-1">Unlimited classes</h5>
+                    <p class="text-white">You can book a class up to 7 days in advance, and there is no limit on your bookings.</p>
+                  </div>
+                </div>
+    
+                <div class="facilities-bullets-item d-flex mb-5">
+                  <div class="facilities-checkmark me-3">
+                    <img src="dist/img/icon-checkmark.svg">
+                  </div>
+                  <div class="facilities-text">
+                    <h5 class="fw-bold text-white mb-1">Latest tracking technology</h5>
+                    <p class="text-white">Each member is supplied with a techno gym key for saving programmes and progress tracking.</p>
+                  </div>
+                </div>
+              </div>
+  
+              </div>
+
+            </div>
+
+
+                   
+            
+
+            
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+      
+
+ 
+
+
+
   
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

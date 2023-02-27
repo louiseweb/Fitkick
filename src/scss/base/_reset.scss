@@ -1,3 +1,7 @@
+p {
+    color: $secondary;
+}
+
 h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 0;
 }
@@ -7,9 +11,9 @@ a {
 }
 
 img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    // height: 100%;
+    // width: 100%;
+    // object-fit: cover;
 }
 
 li {
