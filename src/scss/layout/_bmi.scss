@@ -1,18 +1,22 @@
 .bmi {
+
     background: url(../../dist/img/image-BG-BMI.jpg);
     background-position: top center; 
     background-repeat: no-repeat; 
     background-size: cover;
-
     padding-top: rem(225);
-    padding-bottom: rem(110);
+    padding-bottom: rem(225);
 
     &-container {
+
         position: relative;
         overflow: hidden;
+        max-width: rem(750);
+
     }
 
     &-container::after {
+
         content: '';
         position: absolute;
         top: rem(-75);
@@ -23,11 +27,41 @@
         z-index: 1;
         transform: skew(0deg, -10deg);
 
+        @include breakpoint(tablet) {
+
+            height: rem(240);
+            transform: skew(0deg, -4deg);
+
+        }
+
     }
 
     &-header, &-form, &-info {
+
         position: relative;
         z-index: 2;
+
     }
-    
+
+    &-info {
+
+        max-width: rem(350);
+
+        @include breakpoint(tablet) {  
+
+            float: right;
+            margin-top: rem(-40);
+            max-width: rem(300);
+
+        }
+    }
+
+    &-form {
+
+        @include breakpoint(tablet) {
+            margin-top: rem(100);
+        }  
+
+    }
+ 
 }

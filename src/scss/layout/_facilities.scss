@@ -1,7 +1,12 @@
 .facilities {
+
     position: relative;
+    padding-top: rem(110);
+    padding-bottom: rem(55);
+    background-color: $primary;
 
     &::before {
+
         content: '';
         position: absolute;
         background-color: $primary;
@@ -11,30 +16,17 @@
         left: 0;
         transform: skew(0deg, -10deg);
         z-index: -1;
-    }
 
-    @include breakpoint(tablet) {
+        @include breakpoint(tablet) {
 
-        &::before {
             transform: skew(0deg, -4deg);
+
         }
-    }
 
-    padding-top: rem(110);
-    padding-bottom: rem(55);
-    background-color: $primary;
-
-    &-header {
-        position: relative;
-        z-index: 4;
-    }
-
-    &-bullets {
-        position: relative;
-        z-index: 2;
     }
 
     &::after {
+
         content: '';
         position: absolute;
         background-color: $primary;
@@ -44,14 +36,27 @@
         left: 0;
         transform: skew(0deg, -10deg);
         z-index: 1;
-    }
-
-    @include breakpoint(desktop) {
-
-        &::after {
+    
+        @include breakpoint(desktop) {
+    
             transform: skew(0deg, -4deg);
+ 
         }
+
     }
 
+    &-header {
+
+        position: relative;
+        z-index: 4;
+
+    }
+
+    &-bullets {
+
+        position: relative;
+        z-index: 2;
+
+    }
 
 }

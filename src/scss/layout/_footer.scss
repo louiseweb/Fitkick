@@ -1,0 +1,61 @@
+.footer {
+
+    position: relative;
+
+    &::before {
+
+        content: '';
+        position: absolute;
+        background-color: $secondary;
+        height: rem(200);
+        width: 100%;
+        top: rem(-100);
+        left: 0;
+        transform: skew(0deg, -10deg);
+        z-index: 1;
+
+        @include breakpoint(tablet) {
+
+            transform: skew(0deg, -4deg);
+
+        }
+
+    }
+
+    &-content {
+
+        position: relative;
+        z-index: 1;
+
+    }
+
+    &-border {
+
+        border-bottom: $white .5px solid;
+        
+    }
+
+    &-social-icon {
+
+        background-color: $success;
+        width: rem(32);
+        height: rem(32);
+        border-radius: rem(50);
+        text-align: center;
+
+    }
+
+    &-social-icon:not(:last-child) {
+        margin-right: rem(15);
+    }
+
+    &-socials img {
+
+        height: rem(16);
+        width: auto;
+
+    }
+
+
+    
+}
